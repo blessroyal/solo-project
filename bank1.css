@@ -1,0 +1,58 @@
+
+
+
+.bg-chart {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 0 20px;
+    border: 1px solid white;
+    background: linear-gradient(#ff796f, #bd261b);
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.account-list, .transaction-list {
+    margin-top: 20px;
+}
+
+.account-item, .transaction-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* here is split expenses section */
+
+.bg-glass{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: slategrey;
+    border-radius: 12px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.split-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}

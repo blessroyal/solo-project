@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======THIS IS THE SECTION FOR THE EXPENES TRACKER ================ */
+section{
+    font-family: poppins sans-serif;
+    background-color: rgb(163, 181, 199);
+    width: 80%;
+    height: 100vh;
+     margin: auto; 
+     padding: 1.42rem;
+    border-radius: 1.6rem;
+    box-shadow: 10px 5px 10px 5px lightgray;
+    
+}
+
+
+/* here is the container for the container grid */
+
+
+.income-re{
+    width: 45%;
+    height: 82vh;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: -5px 2px 5px rgb(16, 16, 56), 6px 1px 5px rgb(229, 223, 223);
+    background-color: slategrey;
+    padding: 2rem;
+}
+
+.expense-re{
+    width: 45%;
+    height: 82vh;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px rgb(16, 16, 56), -6px 1px 5px rgb(229, 223, 223);
+    background-color: rgb(171, 183, 175);
+    padding:0 2rem;
+    
+}
+
+/* HERE IS THE CONTAINER DISPLAY FLEX AND PADDING AROUND THE SECTION*/
+.container1{
+    display: flex;
+     padding: 10px; 
+    gap: 5rem;
+}
+
+/* THIS IS THE $0.00   */
+h1{
+    letter-spacing: 1px;
+    margin: 0;
+}
+/* HERE IS THE EXPENSE TRACKER  BRING IT TO CENTER */
+h2{
+display: flex;
+justify-content: center;
+}
+
+/* FOR THE HISTORY AND ADD NEW TRANSACTION SECTION */
+h3.inc{
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin: 40px 0 10px;
+}
+/* FOR BAL, INCOME EXPENSE SECTION */
+h4.inc{
+    margin: 0;
+    text-transform: uppercase;
+    color: #5f5883;
+}
+/* HERE IS THE P SECTION $0.00 */
+p{
+    color: white;
+    font-weight: bold;
+}
+/* here is the section of housing the $0.00 area */
+section .container1 .inc-exp-container {
+   background-color:white ;
+   padding: 20px;
+   box-shadow:0 1px 5px rgba(212, 136, 136, 0.2) ;
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
+
+}
+/* HERE IS THE SECTION FOR BOTH INCOME AND EXPENSE WITH A FLEX1 SHIFT THE RIGHT CLOSER*/
+section .container1 .inc-exp-container  div {
+     flex: 1; 
+    text-align: center; 
+}
+
+/* BORDER DIVIDER FOR THE 0.00 */
+section .container1 .inc-exp-container > div:first-of-type{
+     border-right: 1px solid #835883; 
+}
+section .container1 .money{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+section .container1 .money.plus{
+    color: blue;
+}
+section .container1 .money.minus{
+    color: greenyellow;
+}
+
+/* ------here is the form section  text and amount */
+label{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+input[type="text"],
+input[type="number"]{
+    border:1px solid #835858 ;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+.btn{
+    cursor: pointer;
+    background-color:rgb(113, 104, 201) ;
+    box-shadow: 10px 5px 10px 5px rgb(62, 74, 173);
+    color:white ;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+/* for the btn and the delete btn for history */
+btn.focus, .delete-btn:focus{
+    outline: none;
+
+
+}
+/* here  is the history section  for any input*/
+.list{
+    list-style-type:none ;
+    padding: 0; 
+    margin-bottom: 40px;
+}
+.list li{
+    background-color: white;
+    color: #f11313;
+    display: flex;
+    justify-content: space-between;
+    position: relative;                    /*for the delete btn */
+    padding: 10px;
+    margin: 10px 0;
+}
+/* for the input of plus or minus show  color at both end */
+.list li.plus{
+    border-right: 5px solid forestgreen;
+}
+.list li.minus{
+    border-right: 5px solid crimson;
+}
+
+.delete-btn{
+    cursor: pointer;
+    background-color: #835858;
+    border: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.list li:hover .delete-btn{
+    opacity: 1;
+}
+/* import section  */
+.import-card {
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.import-card h5 {
+    margin-bottom: 20px;
+}
+.import-card .btn {
+    margin-top: 20px;
+}
+.import-result {
+    margin-top: 20px;
+}
+
+
+/* ======================media query======================== */
+@media screen and (max-width:1200px){
+    
+
+ .container1{
+    display: flex;
+    height: 100vh;
+    /* padding: 10px; */
+    gap: 2rem;
+} 
+
+
+
+
+}
+/* *=============================== media query ================= */
+@media screen and (max-width:950px){
+
+.container1{
+    display: grid;
+    gap: 2rem;
+    height:100%;
+
+}
+
+.income-re{
+    width: 90%;
+    margin: auto;
+}
+
+.expense-re{
+    width: 90%;
+    margin: auto;
+}
+
+section{
+    height:100%;
+}
+}

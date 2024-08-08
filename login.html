@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <title>login and signup form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <aside id="sidebar">
+        <div class="d-flex">
+            <button class="toggle-btn" type="button">
+                <i class="lni lni-text-align-left"></i>
+            </button>
+            
+            <div class="sidebar-logo">
+                <!-- <img src="./blesroyalogo.png-removebg-_logo-removebg-preview.png" style="width: 2.5rem;" > -->
+                <!-- <span class="text-white" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span> -->
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="index.html" class="sidebar-link">
+                    <i class="lni lni-windows"></i>
+                    <span>Dasboard</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="financial.html" class="sidebar-link">
+                    <i class="lni lni-agenda"></i>
+                    <span>Financial Goal Setting</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#Transaction" aria-expanded="false" aria-controls="Transaction">
+                    <i class="lni lni-investment"></i>
+                    <span>Transaction</span>
+                </a>
+                <ul id="Transaction" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                   
+                    <li class="sidebar-item">
+                        <a href="linkacc.html" class="sidebar-link">Link Account</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="rescaning.html" class="sidebar-link">Receipt Scanning</a>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                    <i class="lni lni-remove-file"></i>
+                    <span>Expenses</span>
+                </a>
+                <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="expeses.html" class="sidebar-link">Expenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="split.html" class="sidebar-link">Split Expenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="import.html" class="sidebar-link">import Expenses</a>
+                    </li>
+                   
+                </ul>
+            </li>
+           
+            <li class="sidebar-item">
+                <a href="budgets.html" class="sidebar-link">
+                    <i class="lni lni-protection"></i>
+                    <span>Budget</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="expensanlay.html" class="sidebar-link">
+                    <i class="lni lni-stats-up"></i>
+                    <span>Analytics</span>
+                </a>
+            </li>
+           
+        
+       
+        <li class="sidebar-item">
+            <a href="converion.html" class="sidebar-link">
+                <i class="lni lni-slideshare"></i>
+                <span>Conversion</span>
+            </a>
+        </li>
+       
+        <li class="sidebar-item">
+            <a href="costom.html" class="sidebar-link">
+                <i class="lni lni-popup"></i>
+                <span>Customizable Reports</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="login.html" class="sidebar-link">
+                <i class="lni lni-direction-alt"></i>
+                <span>Login </span>
+            </a>
+        </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                    <i class="lni lni-cog"></i>
+                    <span>General Setting</span>
+                </a>
+                <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <!-- <li class="sidebar-item"> -->
+                       
+                        <li class="sidebar-item">
+                            <a href="security.html" class="sidebar-link">Biometric</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="secutraccunt.html" class="sidebar-link">Account Setting</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="securitheme.html" class="sidebar-link">Theme</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="securtiyset.html" class="sidebar-link">Security Setting</a>
+                        </li>
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                </ul>
+            </li>
+          
+          
+           
+                
+        </ul>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+                <i class="lni lni-exit"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+
+
+<!-- Main Component -->
+<div class="main">
+<nav class="navbar navbar-expand">
+   
+   
+
+         <div class="container"> 
+          <div class="spendwis">
+            <img src="./image/blesroyalogo.png-removebg-_logo-removebg-preview.png"  class="logo">
+           <span class="text-dark" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span>
+          </div>
+           
+      <div class="search-bar">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="search" placeholder="search">
+    </div>
+    <div class="profile-area">
+       
+        
+        <div class="profile">
+         
+          <li class="nav-item dropdown me-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./image/logo.jpg " class="rounded-circle" style="width: 3rem; height: 3rem; ">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+            <h5>Blesroyal</h5>
+        </div>
+      
+    </div>
+        </div> 
+   
+</nav>
+
+
+
+    
+<section>
+  <div class="container p-5 mt-5 mb-5 " style="width: 80%; height: 40%; margin: auto;"> 
+                  
+    <div class="card-body bg-light px-3 pt-3 pb-5" style="width: 100%;  ">   
+<!-- Nav tabs -->
+<ul class="nav nav-pills  mb-3 px-3 gap-3" id="myTab" role="tablist" style="margin-left: 5rem;">
+<li class="nav-item bg-danger rounded-2" role="presentation">
+<button class="nav-link active px-5 " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Signup</button>
+</li>
+
+<li class="nav-item bg-danger rounded-2" role="presentation ">
+<button class="nav-link  px-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Login</button>
+</li>
+
+
+</ul>
+
+<!-- Tab panes  signup-->
+<div class="tab-content">
+<div class="tab-pane  active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+
+<div class="card text-black bg-white">
+   
+           <div class="row justify-content-center">
+             <div class="col-md-10 col-lg-6 col-xl-5 
+             ">
+              
+               
+               <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+               <form class="mx-1 mx-md-4">
+
+                 <div class="d-flex flex-row align-items-center mb-4">
+                   <i class="fas fa-user fa-lg me-3 fa-fw mb-4 "></i>
+                   <div  class="form-outline flex-fill mb-0">
+                     <input type="text" id="form3Example1c" class="form-control"placeholder="Your Name" />
+                     <label class="form-label" for="form3Example1c">
+                   </div>
+                 </div>
+
+                 <div class="d-flex flex-row align-items-center mb-4">
+                   <i class="fas fa-envelope fa-lg me-3 fa-fw  mb-4"></i>
+                   <div  class="form-outline flex-fill mb-0">
+                     <input type="email" id="form3Example3c" class="form-control"placeholder="Your Email" />
+                     <label class="form-label" for="form3Example3c">
+                   </div>
+                 </div>
+
+                 <div class="d-flex flex-row align-items-center mb-4">
+                   <i class="fas fa-lock fa-lg me-3 fa-fw mb-4 "></i>
+                   <div  class="form-outline flex-fill mb-0">
+                     <input type="password" id="form3Example4c" class="form-control" placeholder="Password" />
+                     <label class="form-label" for="form3Example4c">
+                   </div>
+                 </div>
+
+                 <div class="d-flex flex-row align-items-center mb-0">
+                   <i class="fas fa-key fa-lg me-3 fa-fw mb-4"></i>
+                   <div  class="form-outline flex-fill mb-0">
+                     <input type="password" id="form3Example4cd" class="form-control"placeholder="Confrim Password" />
+                     <label class="form-label" for="form3Example4cd">
+                   </div>
+                 </div>
+
+                 <div class="form-check d-flex justify-content-center mb-4">
+                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                   <label class="form-check-label" for="form2Example3">
+                     I agree all statements in <a href="#!">Terms of service</a>
+                   </label>
+                 </div>
+
+                 <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-">
+                   <button  type="button"  class="btn btn-primary btn-lg" style="padding:0.5rem 5.2rem ;" >Register</button>
+                 </div>
+                 <hr class="my-4">
+
+                 <button  class="btn btn-lg btn-block btn-danger" style="background-color: #dd4b39; margin-left:2.8rem;" 
+                   type="submit"><i class="fab fa-google me-2 "></i> Sign in with google</button>
+               </form>
+
+             </div>
+             <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center 
+             ">
+
+               <img src="./image/cardmapr-nl-TOaE3Td9F8M-unsplash.jpg" 
+                 class="img-fluid" alt="Sample image" style="width: 100%;">
+
+             </div>
+           </div>
+         </div>
+       </div>
+   
+
+
+
+
+<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+<div class="card text-black bg-white">
+<div class="row justify-content-center ">
+   <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+    
+   
+     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
+
+     <form class="mx-1 mx-md-4">
+
+      
+       
+
+       <div class="d-flex flex-row align-items-center mb-4">
+         <i class="fas fa-envelope fa-lg me-3 fa-fw  mb-4"></i>
+         <div  class="form-outline flex-fill mb-0">
+           <input type="email" id="form3Example3c" class="form-control"placeholder="Your Email" />
+           <label class="form-label" for="form3Example3c">
+         </div>
+       </div>
+
+       <div class="d-flex flex-row align-items-center mb-0">
+         <i class="fas fa-lock fa-lg me-3 fa-fw mb-4 "></i>
+         <div class="form-outline flex-fill mb-0">
+           <input type="password" id="form3Example4c" class="form-control" placeholder="Password" />
+           <label class="form-label" for="form3Example4c">
+         </div>
+       </div>
+
+       <div class="row mb-4 mx-2">
+           <div class="col d-flex justify-content-center">
+             <!-- Checkbox -->
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+               <label class="form-check-label" for="form2Example31"> Remember me </label>
+             </div>
+           </div>
+
+           <div class="col">
+             <!-- Simple link -->
+             <a href="#!">Forgot password?</a>
+           </div>
+         </div>
+
+       
+      
+
+       <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-">
+           
+           <button  class="btn btn-primary btn-lg btn-block " style="padding:0.5rem 5.2rem ;" type="submit">Login</button>
+       </div>
+       <hr class="my-4">
+
+       <button  class="btn btn-lg btn-block btn-danger" style="background-color: #dd4b39; margin-left: 3.2rem;" 
+         type="submit"><i class="fab fa-google me-2 "></i> Sign in with google</button>
+     </form>
+
+   </div>
+   <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+     <img src="./image/cardmapr-nl-TOaE3Td9F8M-unsplash.jpg" 
+       class="img-fluid" alt="Sample image" >
+
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+</div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+ <script src="./script.js"></script>
+ 
+  </body>
+</html>

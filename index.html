@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+   <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+   <title>spendwise tracker</title>
+   <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+
+<body>
+    
+    <div class="wrapper">
+    
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-text-align-left"></i>
+                </button>
+                
+                <div class="sidebar-logo">
+                    <!-- <img src="./blesroyalogo.png-removebg-_logo-removebg-preview.png" style="width: 2.5rem;" > -->
+                    <!-- <span class="text-white" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span> -->
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link">
+                        <i class="lni lni-windows"></i>
+                        <span>Dasboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="financial.html" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Financial Goal Setting</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Transaction" aria-expanded="false" aria-controls="Transaction">
+                        <i class="lni lni-investment"></i>
+                        <span>Transaction</span>
+                    </a>
+                    <ul id="Transaction" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                       
+                        <li class="sidebar-item">
+                            <a href="linkacc.html" class="sidebar-link">Link Account</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="rescaning.html" class="sidebar-link">Receipt Scanning</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-remove-file"></i>
+                        <span>Expenses</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="expeses.html" class="sidebar-link">Expenses</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="split.html" class="sidebar-link">Split Expenses</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="import.html" class="sidebar-link">import Expenses</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+               
+                <li class="sidebar-item">
+                    <a href="budgets.html" class="sidebar-link">
+                        <i class="lni lni-protection"></i>
+                        <span>Budget</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="expensanlay.html" class="sidebar-link">
+                        <i class="lni lni-stats-up"></i>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+               
+            
+           
+            <li class="sidebar-item">
+                <a href="converion.html" class="sidebar-link">
+                    <i class="lni lni-slideshare"></i>
+                    <span>Conversion</span>
+                </a>
+            </li>
+           
+            <li class="sidebar-item">
+                <a href="costom.html" class="sidebar-link">
+                    <i class="lni lni-popup"></i>
+                    <span>Customizable Reports</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="login.html" class="sidebar-link">
+                    <i class="lni lni-direction-alt"></i>
+                    <span>Login </span>
+                </a>
+            </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="lni lni-cog"></i>
+                        <span>General Setting</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <!-- <li class="sidebar-item"> -->
+                           
+                            <li class="sidebar-item">
+                                <a href="security.html" class="sidebar-link">Biometric</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="secutraccunt.html" class="sidebar-link">Account Setting</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="securitheme.html" class="sidebar-link">Theme</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="securtiyset.html" class="sidebar-link">Security Setting</a>
+                            </li>
+                            <!-- </ul> -->
+                        <!-- </li> -->
+                    </ul>
+                </li>
+              
+              
+               
+                    
+            </ul>
+            
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+
+
+  <!-- Main Component -->
+  <div class="main">
+    <nav class="navbar navbar-expand">
+       
+       
+
+             <div class="container"> 
+              <div class="spendwis">
+                <img src="./image/blesroyalogo.png-removebg-_logo-removebg-preview.png"  class="logo">
+               <span class="text-dark" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span>
+              </div>
+               
+          <div class="search-bar">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="search" placeholder="search">
+        </div>
+        <div class="profile-area">
+           
+            
+            <div class="profile">
+             
+              <li class="nav-item dropdown me-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./image/logo.jpg " class="rounded-circle" style="width: 3rem; height: 3rem; ">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+                <h5>Blesroyal</h5>
+            </div>
+          
+        </div>
+            </div> 
+       
+    </nav>
+    
+    <main class="p-2 ">
+        <div class="container-fluid">
+
+       <section class="middle">
+                <div class="header">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="cards" >
+                    <div class="card">
+                        <div class="top">
+                            <div class="left">
+                                <img src="./image/Screenshot 2024-05-02 211659 gtb.png" alt="">
+                                <h2>GTB</h2>
+                            </div>
+                            <img src="./image/visa.png" class="right">
+                        </div>
+                        <div class="middle">
+                            <h1>8210 1110 1231</h1>
+                           <div class="chip">
+                            <img src="./image/chip-removebg-preview 2.png" >
+                           </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <small>Card Holder</small>
+                                <h5>BLESSING OVB</h5>
+                            </div>
+                            <div class="right">
+                               <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5> 
+                               </div>
+                               <div class="cvv">
+                                <small>cvv</small>
+                                <h5>123</h5> 
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- END OF CARD  1-->
+                    <div class="card">
+                        <div class="top">
+                            <div class="left">
+                                <img src="./image/uba-removebg-preview.png" >
+                                <h2>UBA</h2>
+                            </div>
+                            <img src="./image/Screenshot_2024-05-02_210433_now-removebg-preview.png" class="right">
+                        </div>
+                        <div class="middle">
+                            <h1>2111 1991 3323 </h1>
+                         <div class="chip">
+                            <img src="./image/chip-removebg-preview 2.png" >
+                         </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <small>Card Holder</small>
+                                <h5>BLESSING OVB</h5>
+                            </div>
+                            <div class="right">
+                               <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5> 
+                               </div>
+                               <div class="cvv">
+                                <small>cvv</small>
+                                <h5>123</h5> 
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- END OF CARD  2-->
+                    <div class="card">
+                        <div class="top">
+                            <div class="left">
+                                <img src="./image/Screenshot_ZEN-removebg-preview.png">
+                                <h2>ZENITH</h2>
+                            </div>
+                            <img src="./image/visa.png" class="right">
+                        </div>
+                        <div class="middle">
+                            <h1>2117 1191 0982 </h1>
+                           
+                            <div class="chip">
+                                <img src="./image/chip-removebg-preview 2.png" >
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <small>Card Holder</small>
+                                <h5>BLESSING OVB</h5>
+                            </div>
+                            <div class="right">
+                               <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5> 
+                               </div>
+                               <div class="cvv">
+                                <small>cvv</small>
+                                <h5>123</h5> 
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card" style="background-color: white;">
+                        <div class="top">
+                            <div class="left">
+                                <img src="./image/acces_log-removebg-preview.png">
+                                <div>
+                                    <img src="./image/acccess1.png"  style="width: 2.5rem;">
+                                </div>
+                                
+                            </div>
+                            <img src="./image/access_wifi-removebg-preview.png" class="right" style="width: 2.5rem;">
+                        </div>
+                        <div class="middle">
+                           <div>
+                            <img src="./image/chip-removebg-preview 2.png" class="chip mb-2 mt-3">
+                            <h1 class="text-dark">2127  1991  0112 </h1>
+                           
+                        </div>
+                           
+                           
+                           
+                        </div>
+                        <div class="bottom">
+                            <div class="left  ">
+                              
+                                <h3 class="mb-5 text-dark">BLESSING OVBI</h3>
+                            </div>
+                            <div class="right">
+                               <div class="mb-4">
+                                <small class="text-dark">Expiry</small>
+                                <h5 class="text-dark">08/23</h5>
+                               </div>
+                               <div class="cvv mb-4 ">
+                                <img src="./image/vis-removebg-preview.png" class="right " style="width: 4rem; margin-right: 3px;">
+                                
+                               <div> <h5 class="pt-2 fw-bold mx-3 text-dark">PREPAID</h5> </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <!--  **************END OF CARD***************-->
+                    
+                </div>
+    
+                <!--END *OF CARDS************ -->
+           <!-- Section: Summary -->
+         
+    <section class=" pt-5 mb-2">
+      <div class="row gx-xl-5">
+        <div class="col-xl-3 col-md-6 mb-4 " data-aos="fade-up"
+        data-aos-anchor-placement="center-center" data-aos-duration="2000">
+    
+          <!--finacial Goal -->
+          <a
+             class=" d-flex align-items-center p-4 bg-glass  shadow-4-strong  rounded-4  text-reset
+               ripple" href="financial.html"   style="background-color: white; ">
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-money-bill-trend-up fa-lg text-white fa-fw"></i>
+            </div>
+    
+            <div class="ms-4">
+              <p class="text-muted mb-2 ">Finacial Goals</p>
+              <p class="mb-0">
+                <span class="h5 me-2">141 567 </span>
+                <small class="text-success text-sm"
+                       ><i class="fas fa-arrow-up fa-sm me-1"></i>13,48%</small
+                  >
+              </p>
+            </div>
+          </a>
+          <!--END finacial goal -->
+        </div>
+    
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0" >
+          <!--BUDGET Card -->
+          <a
+             class="d-flex align-items-center p-4 bg-glass shadow-4-strong rounded-4 text-reset ripple"
+              href="converion.html"
+               style="background-color: white;">
+    
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-file-alt fa-lg text-white fa-fw"></i>
+            </div>
+    
+            <div class="ms-4">
+              <p class="text-muted mb-2">Currency Conversion</p>
+              <p class="mb-0">
+                <span class="h5 me-2">51 354</span>
+                <small class="text-danger text-sm"
+                       ><i class="fas fa-arrow-up fa-sm me-1"></i>23.58%</small
+                  >
+              </p>
+            </div>
+          </a>
+          <!-- Card -->
+        </div>
+    
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <!-- Card -->
+          <a
+             class="
+                    d-flex align-items-center p-4 bg-glass shadow-4-strong rounded-4 text-reset  " href="./budgets.html"
+              style="background-color: white;" >
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-clock fa-lg text-white fa-fw"></i>
+            </div>
+    
+            <div class="ms-4">
+              <p class="text-muted mb-2">Actual expense</p>
+              <p class="mb-0">
+                <span class="h5 me-2">114:20</span>
+                <small class="text-success text-sm"
+                       ><i class="fas fa-arrow-down fa-sm me-1"></i>23,58%</small
+                  >
+              </p>
+            </div>
+          </a>
+          <!-- Card -->
+        </div>
+    
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <!-- Card -->
+          <a
+             class="d-flex align-items-center p-4 bg-glass  rounded-4 text-reset " href="expensanlay.html"
+             style="background-color: white;">
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-receipt fa-lg text-white fa-fw"></i>
+            </div>
+    
+            <div class="ms-4">
+              <p class="text-muted mb-2">Expense Analytics</p>
+              <p class="mb-0">
+                <span class=" me-2">32.35% </span>
+                <small class="text-success text-sm"
+                       ><i class="fas fa-arrow-down fa-sm me-1"></i>23,58%</small >
+              </p>
+            </div>
+          </a>
+          <!-- Card -->
+        </div>
+      </div>
+    </section>
+    <!-- Section: Summary -->
+    
+           
+            <!-- ==========END OF  mi================================ -->
+                
+            
+      <div class="chart-container p-5">
+        <canvas id="expenseTrends"></canvas>
+      </div> 
+      
+    
+                 
+                   
+    </section> 
+</div>
+
+            
+        </main>
+        </div>
+   
+ </div> 
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

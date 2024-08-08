@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise App - Currency Conversion</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+   <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .bg-glass {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10PX 20px;
+            border: 1px solid floralwhite;
+            background-color: slategrey;
+            border-radius: 12px;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .conversion-result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-text-align-left"></i>
+                </button>
+                
+                <div class="sidebar-logo">
+                    <!-- <img src="./blesroyalogo.png-removebg-_logo-removebg-preview.png" style="width: 2.5rem;" > -->
+                    <!-- <span class="text-white" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span> -->
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link">
+                        <i class="lni lni-windows"></i>
+                        <span>Dasboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="financial.html" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Financial Goal Setting</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#Transaction" aria-expanded="false" aria-controls="Transaction">
+                        <i class="lni lni-investment"></i>
+                        <span>Transaction</span>
+                    </a>
+                    <ul id="Transaction" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                       
+                        <li class="sidebar-item">
+                            <a href="linkacc.html" class="sidebar-link">Link Account</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="rescaning.html" class="sidebar-link">Receipt Scanning</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-remove-file"></i>
+                        <span>Expenses</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="expeses.html" class="sidebar-link">Expenses</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="split.html" class="sidebar-link">Split Expenses</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="import.html" class="sidebar-link">import Expenses</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+               
+                <li class="sidebar-item">
+                    <a href="budgets.html" class="sidebar-link">
+                        <i class="lni lni-protection"></i>
+                        <span>Budget</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="expensanlay.html" class="sidebar-link">
+                        <i class="lni lni-stats-up"></i>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+               
+            
+           
+            <li class="sidebar-item">
+                <a href="converion.html" class="sidebar-link">
+                    <i class="lni lni-slideshare"></i>
+                    <span>Conversion</span>
+                </a>
+            </li>
+           
+            <li class="sidebar-item">
+                <a href="costom.html" class="sidebar-link">
+                    <i class="lni lni-popup"></i>
+                    <span>Customizable Reports</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="login.html" class="sidebar-link">
+                    <i class="lni lni-direction-alt"></i>
+                    <span>Login </span>
+                </a>
+            </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="lni lni-cog"></i>
+                        <span>General Setting</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <!-- <li class="sidebar-item"> -->
+                           
+                            <li class="sidebar-item">
+                                <a href="security.html" class="sidebar-link">Biometric</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="secutraccunt.html" class="sidebar-link">Account Setting</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="securitheme.html" class="sidebar-link">Theme</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="securtiyset.html" class="sidebar-link">Security Setting</a>
+                            </li>
+                            <!-- </ul> -->
+                        <!-- </li> -->
+                    </ul>
+                </li>
+              
+              
+               
+                    
+            </ul>
+            
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+
+
+  <!-- Main Component -->
+  <div class="main">
+    <nav class="navbar navbar-expand">
+       
+       
+
+             <div class="container"> 
+              <div class="spendwis">
+                <img src="./image/blesroyalogo.png-removebg-_logo-removebg-preview.png"  class="logo">
+               <span class="text-dark" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span>
+              </div>
+               
+          <div class="search-bar">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="search" placeholder="search">
+        </div>
+        <div class="profile-area">
+           
+            
+            <div class="profile">
+             
+              <li class="nav-item dropdown me-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./image/logo.jpg " class="rounded-circle" style="width: 3rem; height: 3rem; ">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+                <h5>Blesroyal</h5>
+            </div>
+          
+        </div>
+            </div> 
+       
+    </nav>
+
+<section>
+   
+    
+    <div class="bg-glass my-5 pb-5">
+        <h2 class="mb-4 mt-4 text-center" style="font-size: 30px;">Currency Conversion</h2>
+    <div class="bg-light p-4">
+        <form id="conversion-form">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="amount">Amount:</label>
+                    <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="from-currency">From:</label>
+                    <select class="form-control" id="from-currency" required>
+                        <option value="NGN">NGN-Naira</option>
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <!-- Add more currencies as needed -->
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="to-currency">To:</label>
+                    <select class="form-control" id="to-currency" required>
+                       
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="NGN">NGN-Naira</option>
+                        <!-- Add more currencies as needed -->
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert</button>
+        </form>
+    
+        <div id="conversion-result" class="conversion-result" style="display: none;">
+            <h4>Conversion Result:</h4>
+            <p id="result"></p>
+        </div>
+    </div>
+    </div>
+</section>
+</div>
+</div>
+<script>
+    document.getElementById('conversion-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const amount = document.getElementById('amount').value;
+        const fromCurrency = document.getElementById('from-currency').value;
+        const toCurrency = document.getElementById('to-currency').value;
+        
+        // Simulate currency conversion (In real application, fetch rates from an API)
+        const conversionRates = {
+            "USD": { "EUR": 0.85, "GBP": 0.75, "JPY": 110, "NGN":2000 },
+            "EUR": { "USD": 1.18, "GBP": 0.88, "JPY": 130, "NGN":1000},
+            "GBP": { "USD": 1.34, "EUR": 1.14, "JPY": 148,  "NGN": 800 },
+            "JPY": { "USD": 0.0091, "EUR": 0.0077, "GBP": 0.0068, "NGN":0.200 },
+            "NGN": { "USD": 0.091, "EUR": 0.007, "GBP": 0.068, "JPY":0.100 }
+
+        };
+        
+        const convertedAmount = (amount * conversionRates[fromCurrency][toCurrency]).toFixed(2);
+        
+        document.getElementById('result').innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+        document.getElementById('conversion-result').style.display = 'block';
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+
+    <script src="script.js"></script>
+</body>
+</html>

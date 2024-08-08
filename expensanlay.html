@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Analytics</title>
+ <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+  
+ <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <style>
+    /* body {
+      padding: 20px;
+    } */
+
+    .bg-glass{
+        max-width: 750px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border: 1px solid floralwhite;
+        background-color:rgb(201, 195, 207);
+        border-radius: 8px;
+        margin-top: 30px;
+        
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <aside id="sidebar">
+        <div class="d-flex">
+            <button class="toggle-btn" type="button">
+                <i class="lni lni-text-align-left"></i>
+            </button>
+            
+            <div class="sidebar-logo">
+                <!-- <img src="./blesroyalogo.png-removebg-_logo-removebg-preview.png" style="width: 2.5rem;" > -->
+                <!-- <span class="text-white" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span> -->
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="index.html" class="sidebar-link">
+                    <i class="lni lni-windows"></i>
+                    <span>Dasboard</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="financial.html" class="sidebar-link">
+                    <i class="lni lni-agenda"></i>
+                    <span>Financial Goal Setting</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#Transaction" aria-expanded="false" aria-controls="Transaction">
+                    <i class="lni lni-investment"></i>
+                    <span>Transaction</span>
+                </a>
+                <ul id="Transaction" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                   
+                    <li class="sidebar-item">
+                        <a href="linkacc.html" class="sidebar-link">Link Account</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="rescaning.html" class="sidebar-link">Receipt Scanning</a>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                    <i class="lni lni-remove-file"></i>
+                    <span>Expenses</span>
+                </a>
+                <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="expeses.html" class="sidebar-link">Expenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="split.html" class="sidebar-link">Split Expenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="import.html" class="sidebar-link">import Expenses</a>
+                    </li>
+                   
+                </ul>
+            </li>
+           
+            <li class="sidebar-item">
+                <a href="budgets.html" class="sidebar-link">
+                    <i class="lni lni-protection"></i>
+                    <span>Budget</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="expensanlay.html" class="sidebar-link">
+                    <i class="lni lni-stats-up"></i>
+                    <span>Analytics</span>
+                </a>
+            </li>
+           
+        
+       
+        <li class="sidebar-item">
+            <a href="converion.html" class="sidebar-link">
+                <i class="lni lni-slideshare"></i>
+                <span>Conversion</span>
+            </a>
+        </li>
+       
+        <li class="sidebar-item">
+            <a href="costom.html" class="sidebar-link">
+                <i class="lni lni-popup"></i>
+                <span>Customizable Reports</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="login.html" class="sidebar-link">
+                <i class="lni lni-direction-alt"></i>
+                <span>Login </span>
+            </a>
+        </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                    <i class="lni lni-cog"></i>
+                    <span>General Setting</span>
+                </a>
+                <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <!-- <li class="sidebar-item"> -->
+                       
+                        <li class="sidebar-item">
+                            <a href="security.html" class="sidebar-link">Biometric</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="secutraccunt.html" class="sidebar-link">Account Setting</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="securitheme.html" class="sidebar-link">Theme</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="securtiyset.html" class="sidebar-link">Security Setting</a>
+                        </li>
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                </ul>
+            </li>
+          
+          
+           
+                
+        </ul>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+                <i class="lni lni-exit"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+
+
+<!-- Main Component -->
+<div class="main">
+<nav class="navbar navbar-expand">
+   
+   
+
+         <div class="container"> 
+          <div class="spendwis">
+            <img src="./image/blesroyalogo.png-removebg-_logo-removebg-preview.png"  class="logo">
+           <span class="text-dark" style="font-size: 18px;">Spend<span class="text-success" >Wise</span></span>
+          </div>
+           
+      <div class="search-bar">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="search" placeholder="search">
+    </div>
+    <div class="profile-area">
+       
+        
+        <div class="profile">
+         
+          <li class="nav-item dropdown me-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./image/logo.jpg " class="rounded-circle" style="width: 3rem; height: 3rem; ">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+            <h5>Blesroyal</h5>
+        </div>
+      
+    </div>
+        </div> 
+   
+</nav>
+
+
+ <section>
+  <div class="bg-glass">
+    <h1 class="text-center mb-4 p-5">Expense Analytics</h1>
+    
+  <div class="bg-light p-4">
+       <!-- Expense Form -->
+    <div id="expenseForm" class="mb-4">
+      <h2>Add Expense</h2>
+      <form id="form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" class="form-control" id="amount" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text" class="form-control" id="category" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Expense</button>
+      </form>
+    </div>
+
+    <!-- Expense Table -->
+    <div id="expenseList" class="mb-4">
+      <h2>Expense List</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Expense Summary -->
+    <div id="expenseSummary" class="mb-4">
+      <h2>Expense Summary</h2>
+      <p>Total Expenses: N<span id="total"></span></p>
+    </div>
+
+    <!-- Expense Chart -->
+    <div id="expenseChart" class="mb-4">
+      <h2>Expense Chart</h2>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Edit Expense</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="editForm">
+              <div class="form-group">
+                <label for="editTitle">Title</label>
+                <input type="text" class="form-control" id="editTitle" required>
+              </div>
+              <div class="form-group">
+                <label for="editAmount">Amount</label>
+                <input type="number" class="form-control" id="editAmount" required>
+              </div>
+              <div class="form-group">
+                <label for="editCategory">Category</label>
+                <input type="text" class="form-control" id="editCategory" required>
+              </div>
+              <div class="form-group">
+                <label for="editDate">Date</label>
+                <input type="date" class="form-control" id="editDate" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  </div>
+
+ </section>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('form');
+    const titleInput = document.getElementById('title');
+    const amountInput = document.getElementById('amount');
+    const categoryInput = document.getElementById('category');
+    const dateInput = document.getElementById('date');
+    const expenseTableBody = document.querySelector('#expenseList tbody');
+    const totalOutput = document.getElementById('total');
+    const chartCtx = document.getElementById('chart').getContext('2d');
+    
+    let expenses = [];
+    let chart;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const expense = {
+        title: titleInput.value,
+        amount: parseFloat(amountInput.value),
+        category: categoryInput.value,
+        date: dateInput.value
+      };
+
+      expenses.push(expense);
+      renderExpenses();
+      updateSummary();
+      updateChart();
+      
+      titleInput.value = '';
+      amountInput.value = '';
+      categoryInput.value = '';
+      dateInput.value = '';
+    });
+
+    const renderExpenses = () => {
+      expenseTableBody.innerHTML = '';
+      expenses.forEach((expense, index) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${expense.title}</td>
+          <td>N${expense.amount.toFixed(2)}</td>
+          <td>${expense.category}</td>
+          <td>${expense.date}</td>
+          <td>
+            <button class="btn btn-info btn-sm" onclick="editExpense(${index})">Edit</button>
+            <button class="btn btn-danger btn-sm" onclick="removeExpense(${index})">Remove</button>
+          </td>
+        `;
+        expenseTableBody.appendChild(tr);
+      });
+    };
+
+    window.editExpense = (index) => {
+      const expense = expenses[index];
+      document.getElementById('editTitle').value = expense.title;
+      document.getElementById('editAmount').value = expense.amount;
+      document.getElementById('editCategory').value = expense.category;
+      document.getElementById('editDate').value = expense.date;
+
+      $('#editModal').modal('show');
+
+      document.getElementById('editForm').onsubmit = (e) => {
+        e.preventDefault();
+        const updatedExpense = {
+          title: document.getElementById('editTitle').value,
+          amount: parseFloat(document.getElementById('editAmount').value),
+          category: document.getElementById('editCategory').value,
+          date: document.getElementById('editDate').value,
+        };
+
+        expenses[index] = updatedExpense;
+
+        $('#editModal').modal('hide');
+        renderExpenses();
+        updateSummary();
+        updateChart();
+      };
+    };
+
+    window.removeExpense = (index) => {
+      expenses.splice(index, 1);
+      renderExpenses();
+      updateSummary();
+      updateChart();
+    };
+
+    const updateSummary = () => {
+      const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
+      totalOutput.textContent = total.toFixed(2);
+    };
+
+    const updateChart = () => {
+      if (chart) {
+        chart.destroy();
+      }
+
+      const labels = expenses.map(expense => expense.title);
+      const data = expenses.map(expense => expense.amount);
+
+      chart = new Chart(chartCtx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Expenses',
+            data,
+            backgroundColor: 'rgba(200, 20, 192, 0.2)',
+            borderColor: 'rgba(200, 20, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    };
+  });
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
